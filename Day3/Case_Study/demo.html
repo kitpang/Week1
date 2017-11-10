@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Online E-Commerce Shop</title>
+
+    <style>
+        .mainC {
+
+            background-image: url(../img/trainerHomePage.jpg);
+            background-repeat: no-repeat;
+            background-position: center 0;
+            /* MN: background-sizer: contain or cover */
+            background-size: contain;
+            overflow-x: hidden;
+            /*z-index: -100;*/
+            background-attachment: fixed;
+
+            background-color: yellowgreen;
+            width: 90%;
+            height: 400px;
+            margin: 0 auto;
+            position: relative;
+
+        }
+
+        .firstC {
+            background-color: blue;
+            width: 120%;
+            height: 50px;
+            position: absolute;
+            /* you can not float anything if you make position: absolute; , try not to use float a lot */
+            /*float: right;*/
+            top: 0;
+            left: 0%;
+            z-index: 2;
+            display: none;
+        }
+
+        .secondC {
+            background-color: red;
+            width: 30%;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0%;
+            z-index: 3;
+
+
+        }
+
+        .secondC a {
+            /* MN: text-decoration: none; removes the ugly hyperlink underscores and styles (90s style not in style no more) */
+            text-decoration: none;
+            color: white;
+            font-size: 2em;
+            /* MN: changes scroll thingie from pointer to hand */
+            cursor: pointer;
+
+        }
+
+        @media screen and (min-width: 768px) {
+
+            .firstC {
+                /* i set .firstC to display: none; and it changes AS SOON AS the width is 768px, this media query kicks in and displays .firstC as a block. */
+                display: block;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1> CSS Demos and Practice</h1>
+
+    <div class="mainC">
+        <div class="firstC"></div>
+        <div class="secondC"><a href="#">Click Here!</a></div>
+    </div>
+
+
+</body>
+
+</html>
