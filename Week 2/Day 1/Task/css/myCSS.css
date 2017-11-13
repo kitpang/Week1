@@ -81,7 +81,7 @@ video {
 .searchField {
     width: 70%;
     margin: 10px 0 0 0;
-    z-index:  200;
+    z-index: 200;
 }
 
 .navC {
@@ -96,7 +96,6 @@ video {
 
     background-color: aqua;
 
-
 }
 
 ul.menu-items {
@@ -104,20 +103,48 @@ ul.menu-items {
     margin: 0;
 }
 
-nav li a, nav li {
+nav li a,
+nav li {
     color: blue;
     width: 100%;
     margin: 0%;
     padding: 0%;
     display: block;
     text-decoration: none;
+
+    opacity: 1;
+
 }
 
 .navBtn {
     font-size: 2.5em;
     display: block;
     width: 20%;
+    margin: 0 4vw 0 73vw;
+    padding: 7px 3%;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
+
+.menu-items a {
+
+    padding: 15px 5vw 15px 0;
+    color: white;
+    text-align: right;
+}
+
+.menu-items li {
+
+    border-top: 3px solid rgba(194, 166, 255, 0.2);
+}
+
+.menu-items {
+
+    display: none;
+}
+
 
 /*---------------------------------------------------------------------
                         @FONT FACE - HOW TO EMBED EXTERNAL FONTS
